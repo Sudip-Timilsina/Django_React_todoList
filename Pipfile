@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = false
+name = "pip_conf_index_global"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
