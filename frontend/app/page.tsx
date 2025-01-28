@@ -41,12 +41,12 @@ class Page extends Component {
       axios.put(`http://localhost:8000/api/todos/${item.id}/`, item)
       .then(res => this.refreshList());
       return;
-    }c
+    }
     axios.post('http://localhost:8000/api/todos/', item)
     .then(res => this.refreshList());}
   
   handelDelete = (item:any) => {
-    this.toggle();
+    
     axios.delete(`http://localhost:8000/api/todos/${item.id}/`)
     .then(res => this.refreshList());
   }
